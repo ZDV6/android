@@ -25,7 +25,7 @@ public class SongsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_songs);
 
-listView = (ListView) findViewById(R.id.Babi);
+listView = (ListView) findViewById(R.id.list_item);
 
 list = new ArrayList<>();
 
@@ -41,9 +41,9 @@ adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
 listView.setAdapter(adapter);
 
 
-listView.setOnClickListener(new AdapterView.OnItemClickListener() {
+listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+    public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
         if (mediaPlayer != null) {
             mediaPlayer.release();
         }
@@ -52,6 +52,6 @@ listView.setOnClickListener(new AdapterView.OnItemClickListener() {
         mediaPlayer = mediaPlayer.create(SongsActivity.this, resID);
         mediaPlayer.start();
     }
+});
 }
-;}
 }
