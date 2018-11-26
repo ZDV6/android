@@ -50,6 +50,7 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         int resID = getResources().getIdentifier(list.get(i), "raw", getPackageName());
         mediaPlayer = mediaPlayer.create(SongsActivity.this, resID);
         mediaPlayer.start();
+
     }
 });
 }

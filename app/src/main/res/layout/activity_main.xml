@@ -34,29 +34,14 @@
         android:text="Lyrics"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnAlbum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Album"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnCreatePlaylist"
-        android:layout_width="376dp"
+        android:layout_width="801dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="24dp"
@@ -65,19 +50,23 @@
         android:text="Create Playlist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLyrics"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintVertical_bias="0.047" />
 
     <ListView
         android:id="@+id/list_playlist"
         android:layout_width="wrap_content"
-        android:layout_height="329dp"
+        android:layout_height="390dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCreatePlaylist"></ListView>
+        app:layout_constraintTop_toBottomOf="@+id/btnCreatePlaylist"
+        app:layout_constraintVertical_bias="0.333"></ListView>
 
 </android.support.constraint.ConstraintLayout>
