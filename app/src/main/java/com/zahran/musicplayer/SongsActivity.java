@@ -34,8 +34,7 @@ for (int i = 0;i < fields.length;i++){
     list.add(fields[i].getName());
 }
 
-list.remove(0);
-list.remove(0);
+
 
 adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
 listView.setAdapter(adapter);
