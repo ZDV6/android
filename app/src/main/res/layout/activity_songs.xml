@@ -20,8 +20,8 @@
         app:layout_constraintVertical_bias="0.033"></ListView>
 
     <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="368dp"
+        android:id="@+id/positionBar"
+        android:layout_width="350dp"
         android:layout_height="25dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -32,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_item"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.098" />
 
     <Button
         android:id="@+id/btnPause"
@@ -47,7 +47,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btnStop"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/positionBar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnStop"
@@ -61,7 +62,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnPause"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/positionBar"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>
